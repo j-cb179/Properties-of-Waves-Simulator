@@ -1,0 +1,8 @@
+procedure Output()
+	global wlVAR
+	global velVAR
+	global freqVAR
+	global ampVAR
+	global period
+	print wlVAR, velVAR, freqVAR, ampVAR, period
+		

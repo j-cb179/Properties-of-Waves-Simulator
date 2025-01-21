@@ -1,0 +1,22 @@
+procedure Calculation()
+	global wlVAR
+	global velVAR
+	global freqVAR
+	global period
+	if wlVAR > 0
+		if freqVAR > 0
+			velVAR = wlVAR * freqVAR
+			period = 1 / freqVAR
+			Output()
+		endif
+		if freqVAR = 0
+			freqVAR = velVAR / wlVAR
+			period = 1 / freqVAR
+			Output()
+		endif
+	endif	
+	if wlVAR = 0
+		wlVAR = velVAR / freqVAR
+		period = 1 / freqVAR
+		Output()
+	endif

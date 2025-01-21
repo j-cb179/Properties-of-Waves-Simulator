@@ -1,0 +1,17 @@
+function Validation(inpMessage)
+	while True:
+		userInp = float(input(inpMessage))
+		IF error THEN
+			output("Please input valid value")
+			continue
+		ELSE
+			IF userInp > 0 THEN
+				return userInp
+			ELSE
+				output("enter value greater than 0")
+				continue
+			ENDIF
+		ENDIF
+	endwhile
+endfunction
+		
